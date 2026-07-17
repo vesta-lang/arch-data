@@ -42,8 +42,8 @@ descargado de uops.info:
 python tools/import/build_database.py <instructions.xml> <arch-data>/x86 \
     tools/import/overlay_x86_semantics.def
 
-# 2. visor visual (HTML autocontenido -> index.html, entrada de GitHub Pages)
-python tools/import/dump_html.py <arch-data>/x86 <arch-data>/index.html
+# 2. sitio visual (index.html + analyzer.html + assets/, entrada de GitHub Pages)
+python tools/import/dump_html.py <arch-data>/x86 <arch-data>
 
 # 3. volcado en texto plano
 python tools/import/dump_db.py <arch-data>/x86 "" --limit 0 \

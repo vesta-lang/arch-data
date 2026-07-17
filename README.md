@@ -17,12 +17,11 @@ Para cada arquitectura de instrucciones (hoy x86; mas adelante ARM, RISC-V):
 
 | Fichero                        | Contenido |
 | :----------------------------- | :-------- |
-| `x86/x86.vxisa`                | Sintaxis y semantica por ISA: una fila por forma de instruccion (operandos completos, encoding, efectos, propiedades semanticas). |
-| `x86/intel-skylake.vxarch`     | Modelo de coste de una microarquitectura: latencias, throughput, uops y puertos, deduplicados en clases de scheduling. |
-| `x86/intel-alderlake-p.vxarch` | idem (Golden Cove). |
-| `x86/amd-zen4.vxarch`          | idem. |
+| `x86/x86.vxisa`                | Sintaxis y semantica por ISA: una fila por forma de instruccion (operandos completos, encoding, efectos, propiedades semanticas, documentacion). |
+| `x86/<microarq>.vxarch`        | Modelo de coste de una microarquitectura: latencias, throughput, uops y puertos, deduplicados en clases de scheduling.  Hoy 13 microarquitecturas (Intel Haswell..Arrow Lake + E-cores, AMD Zen2..Zen5). |
 | `x86/instr_form_ids.h`         | Cabecera C generada: `enum InstrFormID`, `kInstrFormCount` y `kInstrChecksum[]`. |
-| `index.html`                   | Visor **visual** de todas las formas: tabla con panel de ayuda, busqueda, filtro por `iclass`, selector de microarquitectura, paginacion y filas expandibles.  Autocontenido; se abre en el navegador o se sirve por GitHub Pages. |
+| `index.html` + `assets/`       | **Sitio visual** (GitHub Pages): tabla de instrucciones con ayuda, busqueda, filtro por `iclass`, selector de microarquitectura, paginacion, orden y filas expandibles (descripcion, clave estructural, efectos, coste por microarquitectura). |
+| `analyzer.html`                | **Analizador de asm**: pega instrucciones (sintaxis Intel) y reporta la forma emparejada, efectos y coste por microarquitectura. |
 | `dump/x86-instructions.txt`    | Volcado en texto plano de todas las formas, para buscar con `grep` o comparar con `diff`. |
 
 Cada forma de instruccion tiene un identificador estable (`FormID`) derivado de
@@ -86,15 +85,15 @@ Como se generan y como actualizar este repositorio: ver
 ```text
 arch-data/
 ├── README.md
-├── index.html                 visor visual (entrada de GitHub Pages)
+├── index.html                 sitio visual: tabla de instrucciones (Pages)
+├── analyzer.html              sitio visual: analizador de asm
+├── assets/                    css + js + datos embebidos (db.js)
 ├── .nojekyll                  Pages sirve los ficheros tal cual
 ├── doc/
 │   └── GENERATION.md          como se generan estos ficheros
 ├── x86/
 │   ├── x86.vxisa              sintaxis + semantica ISA
-│   ├── intel-skylake.vxarch   coste por microarquitectura
-│   ├── intel-alderlake-p.vxarch
-│   ├── amd-zen4.vxarch
+│   ├── <microarq>.vxarch      coste por microarquitectura (13 ficheros)
 │   └── instr_form_ids.h       cabecera C (FormID + checksums)
 └── dump/
     └── x86-instructions.txt   volcado en texto plano de todas las formas
