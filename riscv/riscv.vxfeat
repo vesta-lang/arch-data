@@ -1,0 +1,32 @@
+vxfeat 1 isa=riscv nfeat=83 ncpu=29
+feats: 0=32Bit 1=64Bit 2=StdExtA 3=StdExtC 4=StdExtD 5=StdExtF 6=StdExtI 7=StdExtM 8=StdExtSsccptr 9=StdExtSscofpmf 10=StdExtSscounterenw 11=StdExtSstc 12=StdExtSstvala 13=StdExtSstvecd 14=StdExtSvade 15=StdExtSvbare 16=StdExtSvinval 17=StdExtSvnapot 18=StdExtSvpbmt 19=StdExtV 20=StdExtZa64rs 21=StdExtZba 22=StdExtZbb 23=StdExtZbc 24=StdExtZbkb 25=StdExtZbkc 26=StdExtZbkx 27=StdExtZbs 28=StdExtZfh 29=StdExtZfhmin 30=StdExtZic64b 31=StdExtZicbom 32=StdExtZicbop 33=StdExtZicboz 34=StdExtZiccamoa 35=StdExtZiccif 36=StdExtZicclsm 37=StdExtZiccrse 38=StdExtZicntr 39=StdExtZicond 40=StdExtZicsr 41=StdExtZifencei 42=StdExtZihintntl 43=StdExtZihintpause 44=StdExtZihpm 45=StdExtZkn 46=StdExtZknd 47=StdExtZkne 48=StdExtZknh 49=StdExtZksed 50=StdExtZksh 51=StdExtZkt 52=StdExtZmmul 53=StdExtZvbb 54=StdExtZvbc 55=StdExtZve32f 56=StdExtZve32x 57=StdExtZve64d 58=StdExtZve64f 59=StdExtZve64x 60=StdExtZvfh 61=StdExtZvfhmin 62=StdExtZvkb 63=StdExtZvkg 64=StdExtZvkn 65=StdExtZvknc 66=StdExtZvkned 67=StdExtZvkng 68=StdExtZvknhb 69=StdExtZvks 70=StdExtZvksc 71=StdExtZvksed 72=StdExtZvksg 73=StdExtZvksh 74=StdExtZvkt 75=StdExtZvl128b 76=StdExtZvl256b 77=StdExtZvl32b 78=StdExtZvl512b 79=StdExtZvl64b 80=UnalignedScalarMem 81=UnalignedVectorMem 82=VendorXVentanaCondOps
+# cpu|sched|featid,...
+generic|NoSchedModel|
+generic-rv32|NoSchedModel|0,6
+generic-rv64|NoSchedModel|1,6
+rocket|RocketModel|
+rocket-rv32|RocketModel|0,6,40,41
+rocket-rv64|RocketModel|1,6,40,41
+sifive-7-series|SiFive7Model|
+sifive-e20|RocketModel|0,3,6,7,40,41,52
+sifive-e21|RocketModel|0,2,3,6,7,40,41,52
+sifive-e24|RocketModel|0,2,3,5,6,7,40,41,52
+sifive-e31|RocketModel|0,2,3,6,7,40,41,52
+sifive-e34|RocketModel|0,2,3,5,6,7,40,41,52
+sifive-e76|SiFive7Model|0,2,3,5,6,7,40,41,52
+sifive-p450|SiFiveP400Model|1,2,3,4,5,6,7,20,21,22,27,29,30,31,32,33,34,35,36,37,40,41,42,43,44,52,80,81
+sifive-p670|SiFiveP600Model|1,2,3,4,5,6,7,19,20,21,22,27,29,30,31,32,33,34,35,36,37,40,41,42,43,44,52,53,54,55,56,57,58,59,62,63,64,65,66,67,68,69,70,71,72,73,74,75,77,79,80,81
+sifive-s21|RocketModel|1,2,3,6,7,40,41,52
+sifive-s51|RocketModel|1,2,3,6,7,40,41,52
+sifive-s54|RocketModel|1,2,3,4,5,6,7,40,41,52
+sifive-s76|SiFive7Model|1,2,3,4,5,6,7,40,41,43,52
+sifive-u54|RocketModel|1,2,3,4,5,6,7,40,41,52
+sifive-u74|SiFive7Model|1,2,3,4,5,6,7,40,41,52
+sifive-x280|SiFive7Model|1,2,3,4,5,6,7,19,21,22,28,29,40,41,52,55,56,57,58,59,60,61,75,76,77,78,79
+spacemit-x60|NoSchedModel|1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,18,19,20,21,22,23,25,27,28,29,30,31,32,33,34,35,36,37,38,39,40,41,43,44,51,52,55,56,57,58,59,60,61,74,75,76,77,79
+syntacore-scr1-base|SyntacoreSCR1Model|0,3,6,40,41
+syntacore-scr1-max|SyntacoreSCR1Model|0,3,6,7,40,41,52
+syntacore-scr3-rv32|SyntacoreSCR3RV32Model|0,3,6,7,40,41,52
+syntacore-scr3-rv64|SyntacoreSCR3RV64Model|1,2,3,6,7,40,41,52
+veyron-v1|NoSchedModel|1,2,3,4,5,6,7,21,22,23,27,31,32,33,38,40,41,43,44,52,82
+xiangshan-nanhu|XiangShanNanHuModel|1,2,3,4,5,6,7,16,21,22,23,24,25,26,27,31,33,40,41,45,46,47,48,49,50,52
