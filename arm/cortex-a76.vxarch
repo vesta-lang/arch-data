@@ -1,4 +1,4 @@
-vxarch 1 name=cortex-a76 family=arm isa=arm source=arm-swog src_arch=cortex-a76 date=swog xml_sha256=- classes=30 mapped=1304
+vxarch 1 name=cortex-a76 family=arm isa=arm source=arm-swog src_arch=cortex-a76 date=swog xml_sha256=- classes=30 mapped=1312
 ports: 0=B 1=I 2=M 3=L 4=D 5=V 6=V0 7=V1
 # class|recip_tp|uops|microcoded|macro_fusible|div_cycles|latencies(so:to:kind:cyc[:ub],...)|ports(idx*uops,...)
 class 0|1.00|1|0|0|-1.00|0:0:0:1.00|0*1.00
@@ -744,6 +744,10 @@ class 29|1.00|1|0|0|-1.00|0:0:0:5.00|1*1.00,3*1.00
 1776|4
 1804|2
 1805|2
+1815|4
+1816|4
+1817|4
+1818|4
 1819|3
 1820|3
 1821|3
@@ -1013,6 +1017,10 @@ class 29|1.00|1|0|0|-1.00|0:0:0:5.00|1*1.00,3*1.00
 2582|2
 2583|2
 2602|19
+2663|4
+2664|4
+2665|4
+2666|4
 2675|20
 2676|20
 2677|20

@@ -1,4 +1,4 @@
-vxarch 1 name=neoverse-v2 family=arm isa=arm source=arm-swog src_arch=neoverse-v2 date=swog xml_sha256=- classes=68 mapped=1442
+vxarch 1 name=neoverse-v2 family=arm isa=arm source=arm-swog src_arch=neoverse-v2 date=swog xml_sha256=- classes=68 mapped=1450
 ports: 0=B 1=R 2=I 3=F 4=M 5=M0 6=L 7=D 8=V 9=V0 10=V1 11=S
 # class|recip_tp|uops|microcoded|macro_fusible|div_cycles|latencies(so:to:kind:cyc[:ub],...)|ports(idx*uops,...)
 class 0|0.50|1|0|0|-1.00|0:0:0:1.00|0*1.00
@@ -1033,6 +1033,10 @@ class 67|1.00|1|0|0|-1.00|0:0:0:3.00|9*1.00
 1801|53
 1802|53
 1803|53
+1815|22
+1816|22
+1817|22
+1818|22
 1821|3
 1822|3
 1835|2
@@ -1301,6 +1305,10 @@ class 67|1.00|1|0|0|-1.00|0:0:0:3.00|9*1.00
 2638|64
 2639|64
 2640|64
+2663|22
+2664|22
+2665|22
+2666|22
 2675|42
 2676|42
 2677|42
