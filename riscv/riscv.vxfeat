@@ -1,13 +1,10 @@
-vxfeat 1 isa=riscv nfeat=83 ncpu=29
+vxfeat 1 isa=riscv nfeat=83 ncpu=26
 feats: 0=32Bit 1=64Bit 2=StdExtA 3=StdExtC 4=StdExtD 5=StdExtF 6=StdExtI 7=StdExtM 8=StdExtSsccptr 9=StdExtSscofpmf 10=StdExtSscounterenw 11=StdExtSstc 12=StdExtSstvala 13=StdExtSstvecd 14=StdExtSvade 15=StdExtSvbare 16=StdExtSvinval 17=StdExtSvnapot 18=StdExtSvpbmt 19=StdExtV 20=StdExtZa64rs 21=StdExtZba 22=StdExtZbb 23=StdExtZbc 24=StdExtZbkb 25=StdExtZbkc 26=StdExtZbkx 27=StdExtZbs 28=StdExtZfh 29=StdExtZfhmin 30=StdExtZic64b 31=StdExtZicbom 32=StdExtZicbop 33=StdExtZicboz 34=StdExtZiccamoa 35=StdExtZiccif 36=StdExtZicclsm 37=StdExtZiccrse 38=StdExtZicntr 39=StdExtZicond 40=StdExtZicsr 41=StdExtZifencei 42=StdExtZihintntl 43=StdExtZihintpause 44=StdExtZihpm 45=StdExtZkn 46=StdExtZknd 47=StdExtZkne 48=StdExtZknh 49=StdExtZksed 50=StdExtZksh 51=StdExtZkt 52=StdExtZmmul 53=StdExtZvbb 54=StdExtZvbc 55=StdExtZve32f 56=StdExtZve32x 57=StdExtZve64d 58=StdExtZve64f 59=StdExtZve64x 60=StdExtZvfh 61=StdExtZvfhmin 62=StdExtZvkb 63=StdExtZvkg 64=StdExtZvkn 65=StdExtZvknc 66=StdExtZvkned 67=StdExtZvkng 68=StdExtZvknhb 69=StdExtZvks 70=StdExtZvksc 71=StdExtZvksed 72=StdExtZvksg 73=StdExtZvksh 74=StdExtZvkt 75=StdExtZvl128b 76=StdExtZvl256b 77=StdExtZvl32b 78=StdExtZvl512b 79=StdExtZvl64b 80=UnalignedScalarMem 81=UnalignedVectorMem 82=VendorXVentanaCondOps
 # cpu|sched|featid,...
-generic|NoSchedModel|
 generic-rv32|NoSchedModel|0,6
 generic-rv64|NoSchedModel|1,6
-rocket|RocketModel|
 rocket-rv32|RocketModel|0,6,40,41
 rocket-rv64|RocketModel|1,6,40,41
-sifive-7-series|SiFive7Model|
 sifive-e20|RocketModel|0,3,6,7,40,41,52
 sifive-e21|RocketModel|0,2,3,6,7,40,41,52
 sifive-e24|RocketModel|0,2,3,5,6,7,40,41,52
